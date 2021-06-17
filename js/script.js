@@ -4,7 +4,7 @@ const cat = {
     }
     };
 
-
+cat.complain();
 
 
 const cats = [
@@ -27,9 +27,43 @@ function changeHeader() {
   h3Element.style.fontSize = "2em";
 }
 
-var H3 = document.querySelector(".heading");
+var h3 = document.querySelector(".heading");
 
 var (HTMLHeadingElement)
 
 document.getElementsByClassName("Subheading").innerHTML = totalPrice;
 
+
+//question 5 
+//
+
+document.querySelectorAll
+
+document.querySelector("p")
+
+const paragraph = document.querySelectorAll("p")
+
+paragraph.style.color = "red";
+
+//question 6
+//
+
+document.querySelector("div")
+
+const resultsContainer = document.querySelector (".results")
+
+resultsContainer.style.background = "yellow";
+resultsContainer.innerHTML = "<p>New paragraph<p>";
+
+//question 7
+//
+
+function list = document.querySelector();
+
+
+//question 8
+//
+
+function createCats() {
+
+}
