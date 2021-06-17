@@ -32,10 +32,6 @@ heading.innerHTML= "Updated heading";
 
 heading.style.fontSize = "2em";
 
-var h3 = document.querySelector(".heading");
-
-const heading = document.querySelector(".subheading")
-
 console.dir(heading.className);
 
 heading.className = "Subheading";
