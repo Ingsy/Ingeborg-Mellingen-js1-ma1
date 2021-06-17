@@ -1,4 +1,8 @@
 
+
+
+//question 1
+//
 const cat = {
       complain: function() {console.log ("Meow!");
     }
@@ -21,16 +25,19 @@ const cats = [
   },
 ];
 
-//question 3 
+//question 2
 //
 
 const heading = document.querySelector("h3");
 heading.innerHTML= "Updated heading";
 
-//question 4 
+//question 3
 //
 
 heading.style.fontSize = "2em";
+
+//question 4 
+//
 
 console.dir(heading.className);
 
@@ -38,12 +45,14 @@ heading.className = "Subheading";
 
 console.log(heading.className);
 
+
+console.dir(heading.classList);
+
+heading.classList.add("Subheading");
+
 //question 5 
 //
 
-document.querySelectorAll
-
-document.querySelector("p")
 
 const paragraph = document.querySelectorAll("p")
 
