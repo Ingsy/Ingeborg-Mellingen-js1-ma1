@@ -21,18 +21,26 @@ const cats = [
   },
 ];
 
-function changeHeader() {
-  h3Element.innerHTML = "heading";
-  document.title = "Updated heading";
-  h3Element.style.fontSize = "2em";
-}
+//question 3 
+//
+
+const heading = document.querySelector("h3");
+heading.innerHTML= "Updated heading";
+
+//question 4 
+//
+
+heading.style.fontSize = "2em";
 
 var h3 = document.querySelector(".heading");
 
-var (HTMLHeadingElement)
+const heading = document.querySelector(".subheading")
 
-document.getElementsByClassName("Subheading").innerHTML = totalPrice;
+console.dir(heading.className);
 
+heading.className = "Subheading";
+
+console.log(heading.className);
 
 //question 5 
 //
@@ -44,6 +52,15 @@ document.querySelector("p")
 const paragraph = document.querySelectorAll("p")
 
 paragraph.style.color = "red";
+
+console.log(paragraph);
+
+for(let i=0; i < paragraph.length; i++) {
+
+    paragraph(i).style.color = "red";
+}
+
+
 
 //question 6
 //
