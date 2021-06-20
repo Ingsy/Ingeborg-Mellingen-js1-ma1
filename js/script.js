@@ -1,15 +1,12 @@
-
-
-
 //question 1
 //
 const cat = {
-      complain: function() {console.log ("Meow!");
-    }
-    };
+  complain: function () {
+    console.log("Meow!");
+  },
+};
 
 cat.complain();
-
 
 const cats = [
   {
@@ -29,50 +26,48 @@ const cats = [
 //
 
 const heading = document.querySelector("h3");
-heading.innerHTML= "Updated heading";
 
-//question 3
+function changeHeading() {
+  heading.innerHTML = "Updated heading";
+
+  //question 3
+  //
+
+  heading.style.fontSize = "2em";
+
+  //question 4
+  //
+
+  console.dir(heading.className);
+
+  heading.className = "Subheading";
+
+  console.log(heading.className);
+
+  console.dir(heading.classList);
+
+  heading.classList.add("Subheading");
+}
+
+//question 5
 //
 
-heading.style.fontSize = "2em";
-
-//question 4 
-//
-
-console.dir(heading.className);
-
-heading.className = "Subheading";
-
-console.log(heading.className);
-
-
-console.dir(heading.classList);
-
-heading.classList.add("Subheading");
-
-//question 5 
-//
-
-
-const paragraph = document.querySelectorAll("p")
+const paragraph = document.querySelectorAll("p");
 
 paragraph.style.color = "red";
 
 console.log(paragraph);
 
-for(let i=0; i < paragraph.length; i++) {
-
-    paragraph(i).style.color = "red";
+for (let i = 0; i < paragraph.length; i++) {
+  paragraph(i).style.color = "red";
 }
-
-
 
 //question 6
 //
 
-document.querySelector("div")
+document.querySelector("div");
 
-const resultsContainer = document.querySelector (".results")
+const resultsContainer = document.querySelector(".results");
 
 resultsContainer.style.background = "yellow";
 resultsContainer.innerHTML = "<p>New paragraph<p>";
@@ -80,12 +75,12 @@ resultsContainer.innerHTML = "<p>New paragraph<p>";
 //question 7
 //
 
-function list = document.querySelector();
-
+const something = ["list"];
+function question7(list) {
+  console.log(list);
+}
 
 //question 8
 //
 
-function createCats() {
-
-}
+function createCats() {}
