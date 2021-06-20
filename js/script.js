@@ -8,8 +8,6 @@ const cat = {
 
 cat.complain();
 
-
-
 //question 2
 //
 
@@ -25,22 +23,15 @@ heading.style.fontSize = "2em";
 //question 4
 //
 
-console.dir(heading.classList);
-
 heading.classList.add("Subheading");
-console.dir(heading.classList);
 
 //question 5
 //
 
 const paragraph = document.querySelectorAll("p");
 
-paragraph.style.color = "red";
-
-console.log(paragraph);
-
 for (let i = 0; i < paragraph.length; i++) {
-  paragraph(i).style.color = "red";
+  paragraph[i].style.color = "red";
 }
 
 //question 6
@@ -56,50 +47,43 @@ resultsContainer.innerHTML = "<p>New paragraph<p>";
 //question 7
 //
 
-const something = ["list"];
-function question7(list) {
-  console.log(list);
+function printPropertyInList(list) {
+  for (let i = 0; i < list.length; i++) {
+    console.log(list[i].name);
+  }
 }
 
 const cats = [
-    {
-      name: "Blob",
-      age: 10,
-    },
-    {
-      name: "Harold",
-    },
-    {
-      name: "Blurt",
-      age: 21,
-    },
-  ];
+  {
+    name: "Blob",
+    age: 10,
+  },
+  {
+    name: "Harold",
+  },
+  {
+    name: "Blurt",
+    age: 21,
+  },
+];
+
+printPropertyInList(cats);
 
 //question 8
 //
 
+function createCats(cats) {
+  let html = "";
+  for (let i = 0; i < cats.length; i++) {
+    const cat = cats[i];
 
-  function createCats(cats)[
-    {
-      name: "Blob",
-      age: 10,
-    },
-    {
-      name: "Harold",
-    },
-    {
-      name: "Blurt",
-      age: 21,
-    },
-  ];
+    const age = cat.age || "Age unknown";
+    const div = "<div><h5>" + cat.name + "</h5><p>" + age + "</p></div>";
 
-    if(createCats.age = "") {
-      return "Age unknown";
-    }
+    html = html + div;
   }
-  
-  
-  
-  var returnValue = createCats();
-  document.innerHTML("").innerHTML = returnValue;
-  
+  return html;
+}
+
+var returnValue = createCats(cats);
+document.querySelector(".cat-container").innerHTML = returnValue;
