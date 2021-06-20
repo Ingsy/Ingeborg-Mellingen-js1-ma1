@@ -8,46 +8,27 @@ const cat = {
 
 cat.complain();
 
-const cats = [
-  {
-    name: "Blob",
-    age: 10,
-  },
-  {
-    name: "Harold",
-  },
-  {
-    name: "Blurt",
-    age: 21,
-  },
-];
+
 
 //question 2
 //
 
 const heading = document.querySelector("h3");
 
-function changeHeading() {
-  heading.innerHTML = "Updated heading";
+heading.innerHTML = "Updated heading";
 
-  //question 3
-  //
+//question 3
+//
 
-  heading.style.fontSize = "2em";
+heading.style.fontSize = "2em";
 
-  //question 4
-  //
+//question 4
+//
 
-  console.dir(heading.className);
+console.dir(heading.classList);
 
-  heading.className = "Subheading";
-
-  console.log(heading.className);
-
-  console.dir(heading.classList);
-
-  heading.classList.add("Subheading");
-}
+heading.classList.add("Subheading");
+console.dir(heading.classList);
 
 //question 5
 //
@@ -80,7 +61,45 @@ function question7(list) {
   console.log(list);
 }
 
+const cats = [
+    {
+      name: "Blob",
+      age: 10,
+    },
+    {
+      name: "Harold",
+    },
+    {
+      name: "Blurt",
+      age: 21,
+    },
+  ];
+
 //question 8
 //
 
-function createCats() {}
+
+  function createCats(cats)[
+    {
+      name: "Blob",
+      age: 10,
+    },
+    {
+      name: "Harold",
+    },
+    {
+      name: "Blurt",
+      age: 21,
+    },
+  ];
+
+    if(createCats.age = "") {
+      return "Age unknown";
+    }
+  }
+  
+  
+  
+  var returnValue = createCats();
+  document.innerHTML("").innerHTML = returnValue;
+  
